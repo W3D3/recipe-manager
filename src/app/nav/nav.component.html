@@ -14,20 +14,20 @@
       </li>
     </ul>
 
-    <ul class="nav navbar-nav ml-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-           aria-haspopup="true" aria-expanded="false">
-          Manage
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+    <div class="nav navbar-nav ml-auto">
+      <div class="btn-group show">
+        <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false"
+                (appDropdownToggle)="openNav = $event">
+          Right-aligned menu
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" [appDropdown]="openNav">
+          <button class="dropdown-item" type="button">Action</button>
+          <button class="dropdown-item" type="button">Another action</button>
+          <button class="dropdown-item" type="button">Something else here</button>
         </div>
-      </li>
-    </ul>
+      </div>
+    </div>
 
   </div>
 </nav>

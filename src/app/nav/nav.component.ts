@@ -8,6 +8,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 export class NavComponent {
   name: 'Recipe Manager';
   @Output() routeChanged = new EventEmitter<string>();
+  openNav = false;
 
   navigateToRoute(route: string, event: Event) {
     this.routeChanged.emit(route);
