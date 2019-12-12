@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-12">
+    <app-shopping-list-edit></app-shopping-list-edit>
+    <hr>
+    <div class="list-group">
+      <!--      <a href="#" class="list-group-item list-group-item-action active">-->
+      <!--        Cras justo odio-->
+      <!--      </a>-->
+      <a href="#" class="list-group-item list-group-item-action"
+         *ngFor="let ingredient of ingredients">
+        <b>{{ingredient.amount}} x</b> {{ingredient.name}}
+      </a>
+    </div>
+  </div>
+</div>

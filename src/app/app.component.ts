@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-manager';
+  currentRoute = 'recipes';
+
+  onRouteChanged(route: string) {
+    this.currentRoute = route;
+  }
 }

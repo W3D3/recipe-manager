@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1 class="bd-title" id="content">{{recipe.name}}</h1>
+    <figure class="figure">
+      <img [src]="recipe.imagePath" class="figure-img img-fluid rounded"
+           [alt]="recipe.name">
+    </figure>
+    <p>{{recipe.description}}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="btn-group">
+      <button type="button" class="btn btn-dark">Add to Shopping List</button>
+      <button type="button" class="btn btn-dark">Edit</button>
+      <button type="button" class="btn btn-danger">Delete</button>
+    </div>
+  </div>
+</div>
