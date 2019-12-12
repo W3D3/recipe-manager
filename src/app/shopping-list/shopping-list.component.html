@@ -3,12 +3,9 @@
     <app-shopping-list-edit></app-shopping-list-edit>
     <hr>
     <div class="list-group">
-      <!--      <a href="#" class="list-group-item list-group-item-action active">-->
-      <!--        Cras justo odio-->
-      <!--      </a>-->
       <a href="#" class="list-group-item list-group-item-action"
          *ngFor="let ingredient of ingredients">
-        <b>{{ingredient.amount}} x</b> {{ingredient.name}}
+        <strong>{{ingredient.amount}} x</strong> {{ingredient.name}}
       </a>
     </div>
   </div>
