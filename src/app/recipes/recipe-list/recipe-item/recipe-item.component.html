@@ -1,4 +1,4 @@
-<div class="card mb-3">
+<div class="card mb-3" routerLinkActive="active">
   <div class="row no-gutters">
     <div class="col-md-4">
       <img [src]="recipe.imagePath" class="card-img" alt="{{ recipe.name }}">
@@ -10,7 +10,7 @@
 
       </div>
     </div>
-    <a href="#" class="stretched-link"></a>
+    <a class="stretched-link" style="cursor: pointer" [routerLink]="recipe.id"></a>
   </div>
 </div>
 

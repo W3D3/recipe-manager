@@ -1,7 +1,4 @@
-<app-nav (routeChanged)="onRouteChanged($event)"></app-nav>
+<app-nav></app-nav>
 <div class="container">
-
-
-  <app-recipes *ngIf="currentRoute === 'recipes'"></app-recipes>
-  <app-shopping-list *ngIf="currentRoute === 'shopping-list'"></app-shopping-list>
+  <router-outlet></router-outlet>
 </div>
